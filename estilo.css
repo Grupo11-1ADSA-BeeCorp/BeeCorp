@@ -15,14 +15,13 @@
   font-size: 22px;
   font-weight: 500px;
 }
-.logo img {
+.logo img{
   width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
-  height: 100px;
+  margin-left: 30px;  
 }
 
 .navbar {
@@ -65,17 +64,7 @@ body {
   margin: 0;
   background-color: rgb(255, 255, 255);
 }
-body::-webkit-scrollbar {
-  width: 12px;
-  }
-body::-webkit-scrollbar-track {
-  background: rgba(133, 132, 131, 0);
-  }
-body::-webkit-scrollbar-thumb {
-    background-color: rgb(17, 201, 63);
-    border-radius: 20px;
-    border: 2px solid rgb(0, 0, 0);
-  }
+
 .banner {
   height: 100vh;
   background-image: url(img/background.png);
@@ -138,7 +127,6 @@ body::-webkit-scrollbar-thumb {
 .mel .texto_inicial b{
   font-size: 40px;
   font-weight: 900;
-  display:flex;
 }
 .mel .texto_inicial img{
   margin-right: 32px;
@@ -222,13 +210,12 @@ height:438px;
 .bannercalc{
   width: 100vw;
   height: 640px;
-  background-color: red;
   display: flex;
+  margin-top: 50px;
 }
 .bannercalc .beehive{
 width:375px;
 height:100%;
-background-color:white;
 padding-left: 60px;
 padding-top: 40px;
 display: flex;
@@ -242,7 +229,6 @@ justify-content: flex-start;
 .beetext{
   width:437px;
   height:550px;
-  background-color: white;
   display: flex;
   align-items: center;
 }
@@ -262,7 +248,6 @@ justify-content: flex-start;
 .calculadora{
   width:640px;
   height:100%;
-  background-color:white;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -285,20 +270,29 @@ justify-content: flex-start;
   width:300px;
   height:400px;
   border-radius: 30px;
+  border: 2px black solid;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 30px;
   align-items: center;
-  background-color: #fdf0d0;
   text-align:center;
+  margin-top:50px;
+}
+.calculadora   .form_box .btn{
+  width:300px;
+  height:200px;
+  margin-top:30px;
 }
 .calculadora .form_box p{
   font-size: 22px;
   width:250px;
 }
 .quem_somos {
-  background-color: rgb(255, 255, 255);
   width: 100vw;
+  height:700px;
+  display: flex;
+  align-items: center;
 }
 .quem_somos .container {
   width: 100vw;
@@ -320,10 +314,14 @@ justify-content: flex-start;
   font-weight: 400;
   font-size: 21px;
 }
-.quem_somos .container h1 {
-  font-weight: 900;
+.quem_somos .texto{
+  display:flex;
+  flex-direction: column;
 }
-
+.quem_somos b{
+  font-weight: 900;
+  font-size:40px;
+}
 .fale_conosco {
   background-color: white;
   width: 100vw;
@@ -332,7 +330,8 @@ justify-content: flex-start;
 
 .fale_conosco .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .fale_conosco .container .ui_content {
@@ -340,26 +339,29 @@ justify-content: flex-start;
   width: 525px;
   font-size: 22px;
   margin: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
 }
-.fale_conosco .container .ui_content img {
+.fale_conosco .container .color_bar{
+  background-color: #FEE5BF;
+  height: 100vh;
+  width:60px;
+  display: flex;
+  align-self:flex-end;
+}
+.fale_conosco .container img {
   width: 100px;
 }
 .fale_conosco .form_box b {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 40px;
   margin-top: 10px;
 }
 .fale_conosco .form_box {
   width: 450px;
   height: 570px;
-  background-color: #fdf0d0;
+  border:2px solid black;
   border-radius: 30px;
   display: flex;
   justify-content: space-evenly;
@@ -405,6 +407,7 @@ justify-content: flex-start;
   font-size: 18px;
   font-weight: 400;
 }
+
 .footer .container .nav_footer {
   display: flex;
   width: 100%;
