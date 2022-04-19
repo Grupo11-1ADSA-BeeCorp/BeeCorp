@@ -47,7 +47,7 @@
   width: 400px;
 }
 .btn button {
-  border: 0;
+ border: 0;
   font-weight: 600;
   font-size: 18px;
   padding: 0;
@@ -58,7 +58,7 @@
 
   background: #ffcb7d;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+  border-radius: 4px; 
 }
 body {
   margin: 0;
@@ -434,4 +434,77 @@ justify-content: flex-start;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.login_container{
+  display: flex;
+}
+.img_login{
+  height: 100vh;
+  width: 752px;
+  display: flex;
+  align-items: center;
+
+}
+.img_login img{
+  width: 648px;
+  height: 467px;
+}
+.login_formbox{
+  width: 668px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.formbox_title{
+  width:100%;
+  padding-top: 90px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.formbox_title b{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.formbox_form{
+  width: 360px;
+  height: 400px;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  padding-left: 90px;
+}
+.formbox_form b{
+  font-size:24px;
+  color: #9E9B9B;
+}
+.formbox_form input{
+  width:344px;
+  border:0;
+  border-bottom: 3px solid #FFB800;
+  background: transparent;
+  outline: 0;
+  font-size: 22px; 
+  font-weight: bold;
+}
+.formbox_form button{
+  border: 0;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  cursor: pointer;
+  align-self: center;
+
+
+  background: #ffcb7d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px; 
 }
