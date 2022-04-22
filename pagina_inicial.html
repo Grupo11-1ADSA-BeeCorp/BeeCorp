@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,14 +15,14 @@
             <img src="img/LogoImg.png">
         </div>
         <ul class="navbar">
-            <li class="agora">Início</li>
-            <li>Sobre nós</li>
-            <li>Planos</li>
-            <li>Contato</li>
+            <a class ="nav_a" href="pagina_inicial.html#mel">O Mel</a>
+            <a class="nav_a" href="pagina_inicial.html#sbn">Sobre nós</a>
+            <a class= "nav_a"href="planos.html">Planos</a>
+            <a class= "nav_a" href="pagina_inicial.html#faleconosco">Contato</a>
         </ul>
             <div class="btn">
-                <button>Entrar</button>
-                <button>Cadastre-se</button>
+                <a class="button entrar">Entrar</a>
+                <a class="button cadastrar">Cadastre-se</a>
             </div>
         </div>
     </div>
@@ -35,13 +35,13 @@
                     <strong >Aumente</strong> sua produção.
                     </p>
                     <div class="btncard"> 
-                    <button>Conheça nossos Planos</button>
+                        <a class ="nav_a" href="planos.html"><button>Conheça Nossos Planos</button></a>
                  </div>
             </div>
         </div>
     </div>
 
-    <div  class="mel">
+    <div  id ="mel" class="mel">
         <div class="texto_inicial">
             <img src="img/Ellipse 37.png">
             <b>Importância do Mel</b>
@@ -85,13 +85,13 @@
         </div>
     </div>
 </div>
-    <div class="quem_somos">
+    <div id="sbn" class="quem_somos">
         <div class="container">
             <div class ="quadro">
                 <img src="img/reuniao.jpeg">
             </div>
             <div class="texto">
-            <b>Quem somos</b><br>
+            <b>Sobre Nós</b><br>
             <p>
                 A BeeCorp é constituida por uma equipe de desenvolvedores especializados na captação, tratamento e análise de dados 
                 coletados por sensores de temperatura instalados nas colmeias.<br><br>
@@ -129,7 +129,7 @@
     </div>
   </div>
 
-  <div class="fale_conosco">
+  <div  id="faleconosco"class="fale_conosco">
     <div class="container">
         <div class="ui_content">
             <p>
@@ -170,7 +170,7 @@
                         <a href="#">Início</a>
                     </div>
                     <div class="sobre_nos">
-                        <a href="#">Sobre nós</a>
+                        <a href="#sbn">Sobre nós</a>
                     </div>
                     <div class="planos">
                         <a href="#">Planos</a>
@@ -203,7 +203,7 @@
 
 
         calculadora.innerHTML=`<div class="beetext" style="flex-direction:column; justify-content:space-between">
-        <p style = "text-align:initial"> Houveram ${dias} dias onde a sua produção ficou comprometida. <br>
+        <p style = "display:flex; text-align:initial; font-size:24px; align-items:center; height:100vh"> Houveram ${dias} dias onde a sua produção ficou comprometida. <br>
         O resultado disso foi uma perda de ${mel_perdido.toFixed(1)} litros de produção, consequentemente
         ${porcentagem_mel_perdido.toFixed(2)}% no seu faturamento mensal
         <br>
@@ -217,7 +217,7 @@
     }
         
         function novo_calculo(){
-        calculadora.innerHTML=`<div id= "calculadora" class="calculadora">
+        calculadora.innerHTML=`
             <p>Quanto de produção
                 você perde decorrente à esse fato?</p>
                 <div class="beehive_bar"></div>
