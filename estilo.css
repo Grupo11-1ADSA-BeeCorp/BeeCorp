@@ -4,6 +4,8 @@ html{
 * {
   font-family: "poppins";
   letter-spacing: 0.5px;
+  list-style: none;
+
 }
 
 body {
@@ -221,7 +223,7 @@ body {
 .mel .container p{
   width:900px;
   height:441px;
-  font-size:21px;
+  font-size: 20px;
   font-weight: 500;
   margin: 0 0 0 68px;
   align-self: center;
@@ -386,7 +388,7 @@ justify-content: flex-start;
 .quem_somos .container p {
   width: 520px;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 20px;
 }
 .quem_somos .texto{
   display:flex;
@@ -411,7 +413,7 @@ justify-content: flex-start;
 .fale_conosco .container .ui_content {
   font-weight: 400;
   width: 525px;
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
 }
 .fale_conosco .container .color_bar{
@@ -619,9 +621,13 @@ justify-content: flex-start;
 .img_cadastro img{
   width: 450px;
 }
-plano {
-  height: 800px;
 
+.plano {
+  height: 800px;
+}
+
+.plano b{
+  color: lime;
 }
 
 .espacamento {
@@ -733,6 +739,7 @@ plano {
   font-weight: bold;
   background-color: #f1c454;
   cursor: pointer;
+  
 }
 
 .calculadora_planos {
@@ -741,20 +748,17 @@ plano {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  height: 300px;
-  margin-top: 30px;
+  height: 380px;
   background-color: #f1c454;
   justify-content: space-around;
-  padding: 10px;
 
 }
 
 .calculadora_planos h1 {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-size: 23px;
-
-
 }
 
 
@@ -780,6 +784,7 @@ plano {
   justify-content: center;
 
 } */
+
 
 .digite h4{
   font-weight: 100;
