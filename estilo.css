@@ -1,6 +1,8 @@
+html{
+  scroll-behavior: smooth;
+}
 * {
   font-family: "poppins";
-  scroll-behavior: smooth;
   letter-spacing: 0.5px;
 }
 
@@ -77,11 +79,28 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 18px;
-  width: 120px;
+  width: 166px;
   height: 40px;
   border-radius:4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.btn .button_sair{
+  background-color: #814C1B;
+}
+.btn .button_sair a{
+  color: #FFCB7D;
+  border:0;
+  width: 100%;
+}
+.btn .button_dashboard{
+  background-color: #FFCB7D;
+}
+.btn .button_dashboard a{
+  color: black;
+  border:0;
+  width: 100%;
+}
+
 .btn a{
   font-weight: 600;
   font-size: 18px;
@@ -93,8 +112,10 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 4px; 
-  border:2px solid rgb(255, 255, 255);;
+  border:2px solid rgb(255, 255, 255);
   position:relative;
+  text-decoration: none;
+  color:white;
 }
 .button::before{
  content: "";
@@ -140,6 +161,9 @@ body {
   color: #000000;
   padding: 0;
   font-size: 36px;
+}
+.card_a{
+  text-decoration: none;
 }
 .card p {
   width: 85%;
@@ -542,22 +566,7 @@ justify-content: flex-start;
   font-size: 22px; 
   font-weight: bold;
 }
-.formbox_form button{
-  border: 0;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 0;
-  width: 120px;
-  height: 40px;
-  text-align: center;
-  cursor: pointer;
-  align-self: center;
 
-
-  background: #ffcb7d;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px; 
-}
 .cadastro_container{
   display: flex;
   flex-direction: row;
@@ -603,11 +612,12 @@ justify-content: flex-start;
   height:100vh;
   width: 724px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right:90px;
 }
 .img_cadastro img{
-  width: 586px;
-  height: 596px;
+  width: 450px;
 }
 plano {
   height: 800px;
@@ -925,7 +935,7 @@ plano {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  
+  border-radius:30px;
 
 }
 
@@ -1021,7 +1031,6 @@ plano {
 }
 
 .formbox_form input{
-  width:344px;
   border:0;
   border-bottom: 3px solid #FFB800;
   background: transparent;

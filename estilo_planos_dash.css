@@ -559,6 +559,11 @@ button a {
 .header_dashboard .btn button{
   margin: 10px;
 }
+.button_dashboard{
+  color: #814C1B;
+  background-color:#FFCB7D;
+
+}
 .button_sair{
   color: #FFCB7D;
   background-color:#814C1B;
