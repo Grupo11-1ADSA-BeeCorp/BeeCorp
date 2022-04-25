@@ -189,7 +189,7 @@ body {
 
 .mel{
   width:100vw;
-  height:750px;
+  height:800px;
   background-color: rgb(255, 255, 255);
 }
 .mel .texto_inicial{
@@ -291,7 +291,6 @@ height:438px;
 }
 .bannercalc .beehive{
 width:375px;
-height:100%;
 padding-left: 60px;
 padding-top: 40px;
 display: flex;
@@ -1068,4 +1067,34 @@ justify-content: flex-start;
 .intens{
   padding-left: 20px;
   padding-right: 10px;
+}
+.dash_formbox_form{
+  width: 360px;
+  height: 400px;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  font-weight: 700;
+
+
+}
+.dash_formbox_form button{
+  align-self: center;
+}
+
+.dash_formbox_form input{
+  border:0;
+  border-bottom: 3px solid #FFB800;
+  background: transparent;
+  outline: 0;
+  font-size: 22px; 
+  font-weight: bold;
+}
+.dash_formbox_title{
+  font-weight: bold;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 60px;
 }
