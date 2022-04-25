@@ -1061,3 +1061,11 @@ justify-content: flex-start;
   margin-top: 50px;
   text-align: center;
 }
+.lista{
+ padding-left: 20px;
+ padding-right: 10px; 
+}
+.intens{
+  padding-left: 20px;
+  padding-right: 10px;
+}

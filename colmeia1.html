@@ -89,26 +89,42 @@
             label: 'Temperatura',
             backgroundColor: '#814C1B',
             borderColor: '#814C1B',
-            data: [33, 34, 32, 35, 34, 33, 30, 28, 29, 33, 60],
+            data: [33, 34, 32, 35, 34, 33, 30, 28, 29, 33, 45],
+        },
+        {
+            label: 'Temperatura Ideal',
+            backgroundColor: '#ef233c',
+            borderColor: '#ef233c',
+            data: [35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 45],
         }
     ]
     };
     const data_bar = {
         labels: labels_bar,
         datasets: [{
+            type:'line',
+            label: 'Temperatura Ideal',
+            data: [35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35],
+            borderColor: '#ef233c',
+            backgroundColor: '#ef233c',
+
+        },
+        {
+            type:'bar',
             label: 'Temperatura Média (Graus celsius)',
             backgroundColor: '#FFCB7D',
             borderColor: '#FFCB7D',
             data: [33, 29, 27, 35, 36, 30, 32, 33, 29, 27, 35, 36, 30, 32],
         },
         {
+            type:'bar',
             label: 'Produção (Litros)',
             backgroundColor: '#814C1B',
             borderColor: '#814C1B',
             data: [6, 4, 3.5, 6.5, 6.2, 5.3, 6.4, 6, 4, 3.5, 6.5, 6.2, 5.3, 6.4],
-        }
-    ]
-    };
+        },]
+};
+
 
     const config_line = {
         type: 'line',
@@ -117,7 +133,7 @@
     };
 
     const config_bar = {
-        type: 'bar',
+        type:'line',
         data: data_bar,
         options: {}
     };
