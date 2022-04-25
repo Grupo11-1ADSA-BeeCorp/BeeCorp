@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,83 +11,106 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
     </style>
 </head>
+
 <body>
     <div class="header">
         <div class="logo">
             <a href="pagina_inicial.html"><img src="img/LogoImg.png"></a>
         </div>
         <ul class="navbar">
-            <a class ="nav_a" href="pagina_inicial.html#mel">O Mel</a>
+            <a class="nav_a" href="pagina_inicial.html#mel">O Mel</a>
             <a class="nav_a" href="pagina_inicial.html#sbn">Sobre nós</a>
-            <a class= "nav_a"href="planos.html">Planos</a>
-            <a class= "nav_a" href="pagina_inicial.html#faleconosco">Contato</a>
+            <a class="nav_a" href="planos.html">Planos</a>
+            <a class="nav_a" href="pagina_inicial.html#faleconosco">Contato</a>
         </ul>
-            <div class="btn">
-                <a class="button entrar" href="pagina_login.html">Entrar</a>
-                <a class="button cadastrar" href="pagina_cadastro.html">Cadastre-se</a>
-            </div>
+        <div class="btn">
+            <a class="button entrar" href="pagina_login.html">Entrar</a>
+            <a class="button cadastrar" href="pagina_cadastro.html">Cadastre-se</a>
         </div>
     </div>
-    
+    </div>
+
 
     <div class="cadastro_container">
         <div class="cadastro_formbox">
             <div class="formbox_title">
                 Cadastro
+
             </div>
+            
             <div class="formbox_form">
+
                 <div class="formbox_column">
                     <b>Nome</b>
-                    <input type="text">
+                    <input id="input_nome" type="text">
                     <b>Email</b>
-                    <input type="text">
+                    <input id="input_email" type="text">
                 </div>
                 <div class="formbox_column">
                     <b>Telefone</b>
-                    <input type="text">
+                    <input id="input_telefone" type="text">
                     <b>Senha</b>
-                    <input type="password">
+                    <input id="input_senha" type="password">
                 </div>
+
+
+            </div>
+
+            <div id="mensagem" class="msg-erro"></div>
+            <div class="btn">
+                <button onclick="verificar()">Cadastrar</button>
+            </div>
+
         </div>
-        <div class="btn">
-            <button>Cadastrar</button>
+        <div class="img_cadastro">
+            <img src="img/cadastro.png">
         </div>
     </div>
-    <div class="img_cadastro">
-        <img src="img/cadastro.png">
-    </div>
-    </div>
-    
+
     <div class="footer">
         <div class="container">
             <div class="quadro">
-               <a class="nav_a"><img src="img/LogoImg.png">
+                <a class="nav_a"><img src="img/LogoImg.png">
             </div>
-                <div class="nav_footer">
-                    <div class="inicio">
-                        <a href="pagina_inicial.html">Início</a>
-                    </div>
-                    <div class="sobre_nos">
-                        <a href="pagina_inicial.html#sbn">Sobre nós</a>
-                    </div>
-                    <div class="planos">
-                        <a href="planos.html">Planos</a>
-                        <br>
-                        <p>Básico</p>
-                        <p>Intermediário</p>
-                        <p>Entusiasta</p>
-                    </div>
-                    <div class="contato">
-                        <a href="pagina_inicial.html#faleconosco">Contato</a>
-                        <br>
-                        <p>Rua Haddock Lobo, 595 - 
-                            Cerqueira César
-                        </p>
-                        <p>contato@beecorp.com.br</p>
-                    </div>
+            <div class="nav_footer">
+                <div class="inicio">
+                    <a href="pagina_inicial.html">Início</a>
+                </div>
+                <div class="sobre_nos">
+                    <a href="pagina_inicial.html#sbn">Sobre nós</a>
+                </div>
+                <div class="planos">
+                    <a href="planos.html">Planos</a>
+                    <br>
+                    <p>Básico</p>
+                    <p>Intermediário</p>
+                    <p>Entusiasta</p>
+                </div>
+                <div class="contato">
+                    <a href="pagina_inicial.html#faleconosco">Contato</a>
+                    <br>
+                    <p>Rua Haddock Lobo, 595 -
+                        Cerqueira César
+                    </p>
+                    <p>contato@beecorp.com.br</p>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 </body>
+
 </html>
+
+<script>
+    function verificar() {
+        var nome = input_nome.value
+        var email = input_email.value
+        var telefone = input_telefone.value
+        var senha = input_senha.value
+
+        if (nome == "" || email == "" || telefone == "" || senha == "") {
+            mensagem.innerHTML = "preencha todos os campos!"
+        }
+    }
+</script>
