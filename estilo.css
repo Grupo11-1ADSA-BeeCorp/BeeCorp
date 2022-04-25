@@ -41,7 +41,13 @@ body {
   align-items: center;
 
 }
-
+.msg-erro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: red;
+}
 .nav_a {
   color: rgb(211, 209, 209);
   font-size: 18px;
