@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="estilotemp.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <a class="logo">BeeCorp</a>
+      <ul class="navbar">
+        <a class="agora">HoneySpace</a>
+        <a>O mel</a>
+        <a>A Beecorp</a>
+        <a>Contato</a>
+      </ul>
+      <div class="btn">
+        <a>Login</a>
+        <img src="img/Entrar 1.png" />
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="banner imagens">
+        <img src="img/Beekeeping-amico (1) 1.png" />
+        <img src="img/comb baixo 4.png" />
+      </div>
+      <div class="textos">
+        <h1>A <span class="revolução">revolução</span> no setor apiário.</h1>
+        <p>
+          Sabe aqueles dias em que sua produção esta abaixo da média? Utilizando
+          a tecnologia a nosso favor, nós resolvemos esse problema para você!<br />
+          Quer saber mais sobre esse projeto?
+        </p>
+        <div class="buttons">
+          <a><button class="sbm">Saiba Mais</button></a>
+          <a><button class="pl">Confira os Planos</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="honeyspace main">
+      <img src="img/Frame 2.png" style="width: 8vw" />
+      <img src="img/Smart home-pana 1.png" style="height: 80vh" />
+      <p>
+        O <b>HoneySpace</b> é uma plataforma que possibilita a análise de dados
+        captados através de sensores instalados em microprocessadores.
+        <br />
+        <br />
+        Sendo nosso parceiro, você receberá alertas nos momentos em que a
+        temperatura prejudica a produção de mel da sua empresa. Com esse
+        conhecimento, você poderá tomar medidas que revertam a perda de
+        produção, gerando assim <b>maior lucro para seu negócio</b>
+      </p>
+    </div>
+
+    <div class="calculadora">
+      <div class="calculadora box">
+        <p>
+          Olá! Eu sou a Ana, e vou te ajudar a aumentar a sua produção de mel!
+        </p>
+        <img src="img/abelinha 1.png" />
+        <div class="form">
+          <div class="ipt_produção">
+            Produção de Mel (em litros):
+            <input />
+          </div>
+          <div class="ipt_temp">
+            Dias de baixas temperaturas:
+            <input />
+          </div>
+          <div class="ipt_venda">
+            Valor de venda:
+            <input />
+          </div>
+        </div>
+        <div class="calcular">
+          <button class="pl">Calcular</button>
+          <button class="limpar">Limpar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="resultados">
+      <div class="boxes">
+        <div class="box atual">
+          Sua produção atual
+          <span id="span_litros_atual">550.19 litros</span>
+          <span id="span_dinheiro_atual">R$:2899,50</span>
+        </div>
+        <div class="box produto">
+          Produção com HoneySpace
+          <span id="span_litros_produto"> 620.65 litros </span>
+          <span id="span_dinheiro_produto"> R$: 3469,21 </span>
+        </div>
+        <div class="box aumento">
+          Aumento de Produção
+          <span id="span_aumento"> 10% </span>
+        </div>
+      </div>
+
+      <div class="chart">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+
+    <div class="tecnologias">
+      <img src="img/comb baixo 5.png" />
+      <div class="textos">  
+        <h1>TECNOLOGIAS</h1>
+        <div class="textos titulo">
+        </div>
+        <p>
+          A HoneySpace tem como objetivo possibilitar ao apicultor a utilização
+          do IOT (Internet das coisas) no dia a dia. O IOT possibilita que você
+          monitore suas colmeias do conforto de sua casa, com a facilidade de
+          poder acessar de qualquer dispositivo conectado à internet.
+          <br />
+          <br />
+          Além disso nós captamos temperaturas internas da sua colméia através
+          da utilização do Arduino em conjunto com sensores de temperatura.
+          Podendo assim, analisar os dados coletados e gerar um relatório sobre
+          seu negócio. O nosso produto trabalha disparando alertas que indicam
+          quando sua colméia não esta saudável. É possivel também verificar o
+          histórico de saúde de sua colméia desde o momento da instalação.
+        </p>
+      </div>
+      <img
+        src="img/Imagem Tecnologias.png"
+        style="width: 40%; align-self: flex-end"
+      />
+    </div>
+  </body>
+</html>
+
+<script>
+  const labels = ["5", "10", "15", "20", "25", "30"];
+
+  const data = {
+    labels: labels,
+    datasets: [
+      {
+        label: "Produção Atual",
+        data: [10, 10, 5, 2, 20, 30, 45],
+        backgroundColor: "rgb(241, 153, 83)",
+        borderColor: "rgb(241, 153, 83)",
+      },
+      {
+        label: "Produção Honeyspace",
+        data: [15, 15, 25, 22, 26, 23, 47],
+        backgroundColor: "rgba(63,203,226,1)",
+        borderColor: "rgba(63,203,226,1)",
+      },
+    ],
+  };
+  const config = {
+    type: "bar",
+    data: data,
+    options: {
+      scales: {
+        x: {
+          stacked: true,
+        },
+        y: {
+          stacked: true,
+        },
+      },
+    },
+  };
+</script>
+<script>
+  const myChart = new Chart(document.getElementById("myChart"), config);
+</script>

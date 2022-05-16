@@ -1,0 +1,276 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --cor_fundo: #fff8eb;
+  --cor_primária: #56351e;
+  --cor_secundária: #f19953;
+}
+* {
+  font-family: "poppins";
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cor_fundo);
+  color: var(--cor_primária);
+}
+h1 {
+  font-size: 2.4em;
+  text-align: start;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  font-size: 1.5em;
+  font-weight: 700;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  font-weight: 500;
+  font-size: 0.7em;
+  align-items: flex-end;
+}
+.btn {
+  margin-right: 10%;
+  font-size: 0.8em;
+  width: 8%;
+  color: var(--cor_secundária);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  margin-left: 15%;
+}
+.agora {
+  color: var(--cor_secundária);
+  font-size: 1em;
+}
+.banner {
+  width: 100vw;
+  height: 70%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-top: 7%;
+}
+.textos {
+  width: 30%;
+  margin-left: 15%;
+  margin-right: 10%;
+}
+.revolução {
+  background-color: var(--cor_secundária);
+  color: var(--cor_fundo);
+}
+.textos p {
+  font-size: 1em;
+  font-weight: 500;
+}
+.imagens {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: flex-end;
+  margin: 0;
+  margin-left: 5%;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 1em;
+  margin-top: 10%;
+}
+.buttons button {
+  font-weight: 500;
+  text-align: center;
+  width: 150px;
+  height: 43px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.sbm {
+  color: #56351e;
+  border: 2px var(--cor_primária) solid;
+  mix-blend-mode: normal;
+  border-radius: 5px;
+  background-color: var(--cor_fundo);
+  font-size: 1em;
+}
+.pl {
+  color: var(--cor_fundo);
+  background-color: var(--cor_secundária);
+  border: 0;
+  font-size: 0.9em;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10%;
+}
+.main p {
+  width: 30%;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding-right: 5%;
+}
+.calculadora {
+  width: 100vw;
+  padding-top: 13%;
+  display: flex;
+}
+.calculadora .box {
+  width: 80%;
+  position: relative;
+  background: #37474f;
+  border-radius: 30px;
+  height: 200px;
+  align-self: center;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  color: #E6E6E6;
+  flex-wrap: wrap;
+}
+.calculadora .box img {
+  position: absolute;
+  bottom: 50%;
+}
+.calculadora .box p{
+  position: absolute;
+  left: 300px;
+  bottom:60%;
+  width: 60%;
+  font-weight: 500;
+  font-size: 1.4em;
+}
+.form{
+  padding-left:29%;
+  display: flex;
+}
+.form input{
+  margin-top: 5%;
+  background-color: white;
+  border-radius: 15px;
+  border:0; 
+  height:28%;
+  width: 80%;
+}
+.calcular{
+  margin-left: 29%;
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  height: 20%;
+
+}
+.calcular .pl{
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.calcular .limpar{
+  background:transparent;
+  border:0;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: white;
+}
+.resultados{
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 61%;
+  height: 800px;
+  border: 2px solid var(--cor_secundária);
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 30px;
+  background-color: #FFFBF2;
+}
+.boxes{
+  width: 100%;
+  padding-top: 10%;
+  display:flex;
+  justify-content: space-evenly;
+  gap:10%;
+}
+.boxes .box{
+  width: 35%;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  color: black;
+  background-color: white;
+  font-weight: 500;
+  font-size: 0.9em;
+  text-align: center;
+}
+.boxes .box span{
+  font-size: 1.2em;
+  padding-top: 1%;
+}
+.atual{ 
+  border:2px red solid
+}
+.atual span{
+  color:red;
+}
+.produto{
+  border: 2px green solid;
+}
+.produto span{
+  color: green;
+}
+.aumento{
+  border: 2px blue solid;
+}
+.aumento span{
+  color: blue;
+}
+.chart {
+  margin-top: 20%;
+}
+.tecnologias{
+  margin-top: 17%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100vw;
+}
+.tecnologias .textos{
+  margin:0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.textos .titulo{
+  width: 100%;
+}
+.tecnologias p{
+  margin-top: 15%;
+  width: 70%;
+  align-self: flex-start;
+}
