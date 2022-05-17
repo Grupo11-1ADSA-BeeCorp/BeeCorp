@@ -40,11 +40,13 @@
             </div>
             <div class="formbox_form">
                 <b>E-mail</b>
-                <input type="text">
+                <input id="input_email" type="text">
                 <b>Senha</b>
-                <input type="password">
+                <input id="input_senha" type="password">
+                <div id="mensagem" class="msg-erro"></div>
+
                 <div class="btn">
-                    <button>Login</button>
+                    <button onclick="verificar()">Login</button>
                 </div>
             </div>
             </div>
@@ -84,3 +86,15 @@
     </div>
 </body>
 </html>
+
+<script>
+    function verificar() {
+        var email = input_email.value
+        var senha = input_senha.value
+
+
+        if (senha == "" || email == "") {
+            mensagem.innerHTML = "preencha todos os campos!"
+        }
+    }
+</script>
