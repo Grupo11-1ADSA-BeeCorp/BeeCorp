@@ -1104,3 +1104,37 @@ justify-content: flex-start;
   font-size: 26px;
   margin-top: 60px;
 }
+.visao_geral{
+  width: 78vw;
+  height: 100vh;
+  border: 2px red solid;
+}
+.usuarios{
+  width: 50%;
+  height: 100vh;
+  border: 2px blue solid;
+}
+.usuarios h1{
+  display: flex;
+  justify-content: center;
+}
+.usuario_container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.usuario_box{
+  margin-left: 10%;
+  width: 70%;
+  height: 120px;
+  border-radius: 10px;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #FFCB7D;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: black;
+}
