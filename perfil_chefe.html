@@ -2,30 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
     <title>Perfil</title>
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+        @import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
     </style>
 </head>
 
 <body class="body_dashboard">
     <div class="header_dashboard">
         <div class="container">
-            <div class="user_name">
-                Olá<br>Guilherme Homma Gubany
-            </div>
+            <div class="user_name">Olá<br />Guilherme Homma Gubany</div>
             <div class="btn">
-                <button class="button_dashboard"><a href="dash_perfil.html">Perfil</a></button>
-                <button class="button_dashboard"><a href="dashboard.html">Colméias</a></button>
+                <button class="button_dashboard">
+                    <a href="dash_perfil.html">Perfil</a>
+                </button>
+                <button class="button_dashboard">
+                    <a href="dashboard.html">Colméias</a>
+                </button>
             </div>
         </div>
         <div class="container">
             <div class="btn">
-                <button class="button_sair"><a href="pagina_inicial.html">Sair</a></button>
+                <button class="button_sair">
+                    <a href="pagina_inicial.html">Sair</a>
+                </button>
             </div>
         </div>
     </div>
@@ -34,20 +38,56 @@
     <div class="dash_container">
         <div class="dash_titulo">
             <h1>Visão Geral</h1>
-        </div>  
+        </div>
 
         <div class="visao_geral">
             <div class="usuarios">
-                <h1> Funcionários</h1>
+                <h1>Funcionários</h1>
                 <div class="usuario_container">
                     <div class="usuario_box">
-                        Nome:<span id="nome_usuario"></span>
-                        Email:<span id="email_usuario"></span>
-                        Acesso:<span id="acesso_fazenda_usuario"></span>
+                        <div class="u_box_textos">
+                            Nome:<span id="nome_usuario1"></span> Email:<span id="email_usuario1"></span>
+                            Acesso:<span id="acesso_fazenda_usuario1"></span>
+                        </div>
+                        <img src="img/minus.png" />
                     </div>
-                    <div class="usuario_box"></div>
-                    <a></a>
+                    <div class="usuario_box">
+                        <div class="u_box_textos">
+                            Nome:<span id="nome_usuario2"></span> Email:<span id="email_usuario2"></span>
+                            Acesso:<span id="acesso_fazenda_usuario2"></span>
+                        </div>
+                        <img src="img/minus.png" />
+                    </div>
+                    <div class="usuario_box">
+                        <div class="u_box_textos">
+                            Nome:<span id="nome_usuario3"></span> Email:<span id="email_usuario3"></span>
+                            Acesso:<span id="acesso_fazenda_usuario3"></span>
+                        </div>
+                        <img src="img/minus.png" />
+                    </div>
                 </div>
             </div>
-            <div class="fazenda">
+            <div class="fazendas">
+                <h1>Fazendas</h1>
+                <div class="fazendas_container">
+                    <div class="fazendas_box">
+                        Número da Fazenda: <span id="numero_fazenda1"></span> Rua:
+                        <span id="rua_fazenda1"></span> Bairro:
+                        <span id="bairro_fazenda1"></span> Estado:
+                        <span id="estado_fazenda1"></span> Número de Colmeias:
+                        <span id="colmeias_fazenda1"></span>
+                    </div>
+                    <div class="fazendas_box">
+                        Número da Fazenda: <span id="numero_fazenda2"></span> Rua:
+                        <span id="rua_fazenda2"></span> Bairro:
+                        <span id="bairro_fazenda2"></span> Estado:
+                        <span id="estado_fazenda2"></span> Número de Colmeias:
+                        <span id="colmeias_fazenda2"></span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+</body>
+
+</html>

@@ -1,48 +1,50 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Inicial</title>
+    <link rel="stylesheet" href="estilo.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
     </style>
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
     <div class="header">
-        <div class="logo">
-            <a href="pagina_inicial.html"><img src="img/LogoImg.png"></a>
-        </div>
-        <ul class="navbar">
-            <a class ="nav_a" href="pagina_inicial.html#mel">O Mel</a>
-            <a class="nav_a" href="pagina_inicial.html#sbn">Sobre nós</a>
-            <a class= "nav_a"href="planos.html">Planos</a>
-            <a class= "nav_a" href="pagina_inicial.html#faleconosco">Contato</a>
-        </ul>
-            <div class="btn">
-                <a class="button entrar" href="pagina_login.html">Entrar</a>
-                <a class="button cadastrar" href="pagina_cadastro.html">Cadastre-se</a>
-            </div>
+      <a class="logo"><span style="color:#f19953">Bee</span>Corp</a>
+      <ul class="navbar">
+        <a class="agora">HoneySpace</a>
+        <a>O mel</a>
+        <a>A Beecorp</a>
+        <a>Contato</a>
+      </ul>
+      <div class="btn">
+        <a>Login</a>
+        <img src="img/Entrar 1.png" />
+      </div>
     </div>
-    
-    <div class="banner">
-            <div class="container">
-                <div class="card">
-                    <p>
-                    <strong >Preserve</strong> suas abelhas.<br>
-                    <strong >Aumente</strong> sua produção.
-                    </p>
-                    <div class="btncard"> 
-                        <a class ="card_a" href="planos.html"><button>Conheça Nossos Planos</button></a>
-                 </div>
-            </div>
-        </div>
-    </div>
-
+      
+      <div id="sbn" class="quem_somos">
+          <div class="container">
+              <div class ="quadro">
+                  <img src="img/251.png">
+              </div>
+              <div class="texto">
+              <b>Sobre Nós</b><br>
+              <p>
+                  A BeeCorp é constituida por uma equipe de desenvolvedores especializados na captação, tratamento e análise de dados 
+                  coletados por sensores de temperatura instalados nas colmeias.<br><br>
+                  Usamos a tecnologia ao nosso favor e focamos na aplicação dela no setor apiário, 
+                  buscando sempre uma melhora na performance da produção de mel dos nossos clientes.
+              </p>
+          </div>
+          </div>
+      </div>
+  </div>
     <div  id ="mel" class="mel">
         <div class="texto_inicial">
-            <img src="img/Ellipse 37.png">
             <b>Importância do Mel</b>
         </div>
         <div class="container">
@@ -58,47 +60,6 @@
                 <div class="img_mel">
                     <img src="img/Imagem Mel.png">
             </div>
-        </div>
-    </div>
-</div>
-    
-    <div class="bannercalc">
-        <div class="beehive">
-            <img src="img/melzinho.png">
-            <div class="beehive_bar"></div>
-        </div>
-        <div class="beetext">
-            <p>Quando a temperatura exterior se encontra inferior à 17 graus, as abelhas cessam completamente a sua produção.</p>
-        </div>
-        <div id= "calculadora" class="calculadora">
-            <p>Quanto de produção
-                você perde decorrente à esse fato?</p>
-                <div class="beehive_bar"></div>
-                <div class="form_box">
-                <p>Quantidade de mel produzido ao mês (em litros)</p><br>
-                <input id="input_mel"><br>
-                <p>Vezes em que temperatura ficou abaixo de 17 graus</p><br>
-                <input id="input_dias">
-                <div class="btn">
-                    <button onclick="verificar()">Calcular</button>
-                </div>
-        </div>
-    </div>
-</div>
-    <div id="sbn" class="quem_somos">
-        <div class="container">
-            <div class ="quadro">
-                <img src="img/reuniao.jpeg">
-            </div>
-            <div class="texto">
-            <b>Sobre Nós</b><br>
-            <p>
-                A BeeCorp é constituida por uma equipe de desenvolvedores especializados na captação, tratamento e análise de dados 
-                coletados por sensores de temperatura instalados nas colmeias.<br><br>
-                Usamos a tecnologia ao nosso favor e focamos na aplicação dela no setor apiário, 
-                buscando sempre uma melhora na performance da produção de mel dos nossos clientes.
-            </p>
-        </div>
         </div>
     </div>
 </div>
@@ -160,34 +121,26 @@
     </div>
 
     <div class="footer">
-        <div class="container">
-            <div class="quadro">
-               <a class="nav_a"><img src="img/LogoImg.png">
-            </div>
-                <div class="nav_footer">
-
-                    <div class="sobre_nos">
-                        <a href="pagina_inicial.html#sbn">Sobre nós</a>
-                    </div>
-                    <div class="planos">
-                        <a href="planos.html">Planos</a>
-                        <br>
-                        <p>Básico</p>
-                        <p>Intermediário</p>
-                        <p>Entusiasta</p>
-                    </div>
-                    <div class="contato">
-                        <a href="pagina_inicial.html#faleconosco">Contato</a>
-                        <br>
-                        <p>Rua Haddock Lobo, 595 - 
-                            Cerqueira César
-                        </p>
-                        <p>contato@beecorp.com.br</p>
-                    </div>
-                </div>
-            </div>
+        <h1><span style="color:#f19953">Bee</span>Corp</h1>
+        <div class="card">
+          <a>Sobre Nós</a>
+          <p>A Empresa</p>
+          <p>Missão, Visão e Valores</p>
+          <p>Tecnologias</p>
         </div>
-    </div>
+        <div class="divisoria"></div>
+        <div class="card">
+          <a>Menu</a>
+          <p>Inicio</p>
+          <p>Calculadora</p>
+          <p>O mel</p>
+        </div>
+        <div class="divisoria"></div>
+        <div class="card">
+          <a>Entre em contato conosco</a>
+          <p>Formulario de contato<br>ou<br>suporte@honeyspace.com.br</p>
+        </div>
+      </div>
 </body>
 </html>
 <script>

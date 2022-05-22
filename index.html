@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Inicial</title>
-    <link rel="stylesheet" href="estilotemp.css" />
+    <link rel="stylesheet" href="estilo.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
     </style>
@@ -13,14 +13,14 @@
   </head>
   <body>
     <div class="header">
-      <a class="logo">BeeCorp</a>
+      <a class="logo"><span style="color:#f19953">Bee</span>Corp</a>
       <ul class="navbar">
         <a class="agora">HoneySpace</a>
-        <a>O mel</a>
-        <a>A Beecorp</a>
-        <a>Contato</a>
+        <a href="beecorp.html">A Beecorp</a>
+        <a href="planos.html">Planos</a>
+        <a href="beecorp #faleconosco">Contato</a>
       </ul>
-      <div class="btn">
+      <div class="btn login">
         <a>Login</a>
         <img src="img/Entrar 1.png" />
       </div>
@@ -39,8 +39,8 @@
           Quer saber mais sobre esse projeto?
         </p>
         <div class="buttons">
-          <a><button class="sbm">Saiba Mais</button></a>
-          <a><button class="pl">Confira os Planos</button></a>
+          <a href="beecorp.html"><button class="sbm">Saiba Mais</button></a>
+          <a href="planos.html"><button class="pl">Confira os Planos</button></a>
         </div>
       </div>
     </div>
@@ -69,15 +69,15 @@
         <div class="form">
           <div class="ipt_produção">
             Produção de Mel (em litros):
-            <input />
+            <input id="input_produção"/>
           </div>
           <div class="ipt_temp">
             Dias de baixas temperaturas:
-            <input />
+            <input id="ipt_dias" />
           </div>
           <div class="ipt_venda">
             Valor de venda:
-            <input />
+            <input id="ipt_valor" />
           </div>
         </div>
         <div class="calcular">
@@ -91,17 +91,17 @@
       <div class="boxes">
         <div class="box atual">
           Sua produção atual
-          <span id="span_litros_atual">550.19 litros</span>
-          <span id="span_dinheiro_atual">R$:2899,50</span>
+          <span id="span_litros_atual"></span>
+          <span id="span_dinheiro_atual"></span>
         </div>
         <div class="box produto">
           Produção com HoneySpace
-          <span id="span_litros_produto"> 620.65 litros </span>
-          <span id="span_dinheiro_produto"> R$: 3469,21 </span>
+          <span id="span_litros_produto"></span>
+          <span id="span_dinheiro_produto"></span>
         </div>
         <div class="box aumento">
           Aumento de Produção
-          <span id="span_aumento"> 10% </span>
+          <span id="span_aumento"></span>
         </div>
       </div>
 
@@ -136,10 +136,40 @@
         style="width: 40%; align-self: flex-end"
       />
     </div>
+
+    <div class="footer">
+      <h1><span style="color:#f19953">Bee</span>Corp</h1>
+      <div class="card">
+        <a>Sobre Nós</a>
+        <p>A Empresa</p>
+        <p>Missão, Visão e Valores</p>
+        <p>Tecnologias</p>
+      </div>
+      <div class="divisoria"></div>
+      <div class="card">
+        <a>Menu</a>
+        <p>Inicio</p>
+        <p>Calculadora</p>
+        <p>O mel</p>
+      </div>
+      <div class="divisoria"></div>
+      <div class="card">
+        <a>Entre em contato conosco</a>
+        <p>Formulario de contato<br>ou<br>suporte@honeyspace.com.br</p>
+      </div>
+    </div>
   </body>
 </html>
 
 <script>
+
+  function calcular(){
+        var mel = Number(ipt_produção.value)
+        var mel_por_dia = mel/30
+        var dias = Number (ipt_dias.value)
+        var porcentagem = (100/mel)*mel_perdido
+}
+
   const labels = ["5", "10", "15", "20", "25", "30"];
 
   const data = {
